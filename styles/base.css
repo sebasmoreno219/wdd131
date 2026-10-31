@@ -21,7 +21,6 @@ body {
     background-color: #f0f2f5;
 }
 
-/* ---- Header and Navigation (Flexbox) ---- */
 header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -54,14 +53,12 @@ nav a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover Effect */
 nav a:hover {
     background-color: var(--secondary-color);
     color: var(--white);
     border-radius: 4px;
 }
 
-/* ---- Main Content (Grid) ---- */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -75,14 +72,12 @@ h1 {
     color: var(--primary-color);
 }
 
-/* Grid Distribution */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-/* ---- Cards ---- */
 .card {
     background-color: var(--white);
     border: 1px solid #e0e0e0;
@@ -103,7 +98,13 @@ h1 {
     text-align: center;
 }
 
-.card-content,
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .country-info {
     display: flex;
     align-items: center;
@@ -148,7 +149,7 @@ figcaption {
 }
 
 .card ul li a {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
 }
@@ -157,7 +158,6 @@ figcaption {
     text-decoration: underline;
 }
 
-/* ---- Footer ---- */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
