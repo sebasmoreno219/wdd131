@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="A responsive temple picture album featuring beautiful architecture from around the world.">
+    <meta name="author" content="Sebastian Moreno">
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Temple Album</h1>
+            <button id="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">&#9776;</button>
+        </div>
+        <nav id="nav-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home</h2>
+        <div class="grid-container">
+
+            <figure>
+                <img src="https://www.churchofjesuschrist.org/imgs/e012ebb4075dc7976a314471fc0a3b3058e37c1a/full/500%2C/0/default"
+                    alt="Exterior photo of the Cochabamba Bolivia Temple" width="400"
+                    height="250" loading="lazy">
+                <figcaption>Cochabamba Bolivia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kyiv-ukraine/800x500/kyiv-ukraine-temple-lds-774302-wallpaper.jpg"
+                    alt="Exterior photo of the Kyiv Ukraine Temple" width="400"
+                    height="250" loading="lazy">
+                <figcaption>Kyiv Ukraine Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/anchorage-alaska/800x450/anchorage-temple-lds-253274-wallpaper.jpg"
+                    alt="The Anchorage Alaska Temple in the winter with snow on the ground and the windows lit up" width="400"
+                    height="250" loading="lazy">
+                <figcaption>Anchorage Alaska Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/cardston-alberta/800x500/cardston-alberta-temple-lds-680533-wallpaper.jpg"
+                    alt="The exterior of the Cardston Alberta Temple in Canada. The temple was photographed during the daytime. There are clouds in the sky. The view shows the front of the temple and the plaza in front of it." width="400"
+                    height="250" loading="lazy">
+                <figcaption>Cardston Alberta Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/concepcion-chile/2018/800x500/01-Concepcion-Chile-Temple-2113673.jpg"
+                    alt="Exterior of the Concepción Chile Temple" width="400"
+                    height="250" loading="lazy">
+                <figcaption>Concepción Chile Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/800x500/laie-temple-775370-wallpaper.jpg"
+                    alt="Exterior of the Laie Hawaii Temple with the reflecting pool in the foreground." width="400"
+                    height="250" loading="lazy">
+                <figcaption>Laie Hawaii Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/london-england/800x500/london-england-temple-lds-393730-wallpaper.jpg"
+                    alt="The exterior of the London England Temple and surrounding landscape of water and snow-covered lawn and trees. The temple was photographed during the evening. The lights of the temple are turned on." width="400"
+                    height="250" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/panama-city-panama/800x500/panama-city-temple-lds-569186-wallpaper.jpg"
+                    alt="A side view of the Panama City Panama temple, surrounded by palm trees, with large white clouds overhead." width="400"
+                    height="250" loading="lazy">
+                <figcaption>Panama City Panama Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/port-au-prince-haiti/800x500/01-Port-au-Prince-Haiti-Temple-2264538.jpg"
+                    alt="Exterior of the Port-Au-Prince Haiti Temple" width="400"
+                    height="250" loading="lazy">
+                <figcaption>Port-Au-Prince Haiti Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Sebastian Moreno | Bolivia</p>
+        <p class="last-modified">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@media (min-width: 640px) {
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .header-container {
+        padding: 1rem 2rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: var(--primary-color);
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    nav a {
+        padding: 1rem 1.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
