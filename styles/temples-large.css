@@ -1,24 +1,22 @@
 @media (min-width: 640px) {
 
-    #menu-toggle {
-        display: none;
-    }
-
-    .header-container {
-        padding: 1rem 2rem;
-    }
-
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: var(--primary-color);
+        padding: 0 max(calc((100% - 1200px) / 2), 1rem);
+    }
+
+    .header-container {
+        padding: 1rem 0;
+    }
+
+    #menu-toggle {
+        display: none;
     }
 
     nav {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
     }
 
