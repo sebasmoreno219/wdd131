@@ -69,7 +69,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background-color: var(--secondary-color);
+    background-color: #145076;
 }
 
 main {
