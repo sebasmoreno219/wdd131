@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="General information, demographic data, and current weather for Cochabamba, Bolivia.">
+
+    <meta name="description"
+        content="General information, demographic data, and current weather for Cochabamba, Bolivia.">
+
     <meta name="author" content="Sebastian Moreno">
 
     <title>WDD 131 - Country Page - Sebastian Moreno</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 
@@ -22,21 +25,26 @@
 </head>
 
 <body>
+
     <header>
         <h1>Cochabamba, Bolivia</h1>
     </header>
 
     <main>
+
         <div class="hero">
             <picture>
                 <source srcset="images/cristodelaconcordia.webp" media="(min-width: 768px)">
+
                 <img src="images/cristo-de-la-concordia.webp"
                     alt="Panoramic view of the Cristo de la Concordia in Cochabamba, Bolivia" width="1200" height="800">
             </picture>
         </div>
 
         <section class="card data">
+
             <h2>Data</h2>
+
             <dl>
                 <dt>Area:</dt>
                 <dd>55,631 sq km</dd>
@@ -62,9 +70,11 @@
                 <dt>Internet TLD:</dt>
                 <dd>.bo</dd>
             </dl>
+
         </section>
 
         <section class="card weather">
+
             <h2>Weather</h2>
 
             <img src="images/partly-cloudy-day.svg" alt="Partly cloudy weather icon" class="weather-icon-mobile"
@@ -83,13 +93,22 @@
                 <dt>Wind Chill:</dt>
                 <dd><span id="windchill"></span></dd>
             </dl>
+
         </section>
+
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear"></span> | Sebastian Moreno | Cochabamba, Bolivia</p>
+
+        <p>
+            &copy;<span id="currentyear"></span>
+            | Sebastian Moreno | Cochabamba, Bolivia
+        </p>
+
         <p id="lastModified"></p>
+
     </footer>
+
 </body>
 
 </html>
