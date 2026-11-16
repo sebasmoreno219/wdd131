@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="General information, demographic data, and current weather for Cochabamba, Bolivia.">
+    <meta name="author" content="Sebastian Moreno">
+    <title>WDD 131 - Country Page - Sebastian Moreno</title>
+
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cochabamba, Bolivia</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cristodelaconcordia.jpg" media="(min-width: 768px)">
+                <img src="images/cristo-de-la-concordia.jpg"
+                    alt="Vista panorámica del Cristo de la Concordia en Cochabamba, Bolivia" width="1200" height="800">
+            </picture>
+        </div>
+
+        <section class="card data">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>55,631 sq km</dd>
+
+                <dt>Population:</dt>
+                <dd>2,005,373</dd>
+
+                <dt>Capital:</dt>
+                <dd>Cochabamba</dd>
+
+                <dt>Languages:</dt>
+                <dd>Spanish</dd>
+
+                <dt>Currency:</dt>
+                <dd>Boliviano (BOB)</dd>
+
+                <dt>Time Zone:</dt>
+                <dd>UTC-4</dd>
+
+                <dt>Calling Code:</dt>
+                <dd>+591</dd>
+
+                <dt>Internet TLD:</dt>
+                <dd>.bo</dd>
+            </dl>
+        </section>
+
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/partly-cloudy-day.svg" alt="Icono de clima parcialmente nublado" class="weather-icon-mobile"
+                width="80" height="80">
+
+            <dl>
+                <dt>Temperature:</dt>
+                <dd><span id="temp">9</span> °C</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Partly Cloudy</dd>
+
+                <dt>Wind:</dt>
+                <dd><span id="wind">12</span> km/h</dd>
+
+                <dt>Wind Chill:</dt>
+                <dd><span id="windchill"></span></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Sebastian Moreno | Cochabamba, Bolivia</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
