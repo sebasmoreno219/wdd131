@@ -9,9 +9,9 @@ main {
     /* border-bottom: none; */
 }
 
-.weather-icon-mobile {
-    /* display: none; */
-}
+/* .weather-icon-mobile {
+    display: none;
+} */
 
 .card {
     position: absolute;
